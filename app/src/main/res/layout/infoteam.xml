@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/infosujet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/infosujet"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintLongText" />
+
+    <ImageView
+        android:id="@+id/lignetitre"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/lignetitre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infosujet"
+        app:srcCompat="@mipmap/ligne_foreground"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/recyclelogo"
+        android:layout_width="221dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/recyclepanneau"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lignetitre"
+        tools:srcCompat="@mipmap/panneauxrecycle_round" />
+
+    <TextView
+        android:id="@+id/equipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="175dp"
+        android:text="@string/notre_quipe"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/entreprise"
+        app:layout_constraintEnd_toStartOf="@+id/teoimg" />
+
+    <TextView
+        android:id="@+id/teo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/t_o_asseline"
+        android:textAlignment="textStart"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/teoimg"
+        app:layout_constraintTop_toBottomOf="@+id/equipe" />
+
+    <TextView
+        android:id="@+id/arthur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/arthur_weidner"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/arthurimg"
+        app:layout_constraintTop_toBottomOf="@+id/teo" />
+
+    <TextView
+        android:id="@+id/entreprise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/iut_informatique_14_04_2023"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/arthurimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teoimg"
+        app:srcCompat="@mipmap/arthur"
+        android:contentDescription="@string/cetteimgetaitenoctobre" />
+
+    <ImageView
+        android:id="@+id/teoimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="170dp"
+        android:contentDescription="@string/cetaitaliut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/teo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/lignetitre4"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/lignetitre"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ligne_foreground"
+        tools:ignore="ImageContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/lignetitre3"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/lignetitre"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/aidetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ligne_foreground"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/aidetext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/aide_l_application_permet_de_calculer_le_meilleur_emplacement_pour_vos_panneaux_solaires_il_vous_suffit_de_choisir_un_panneau_d_entrer_les_coordonn_es_et_de_recevoir_les_statistiques"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lignetitre3"
+        tools:ignore="VisualLintLongText" />
+
+    <Button
+        android:id="@+id/takephoto"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/photo_clic"
+        app:layout_constraintBottom_toTopOf="@+id/titlephoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/titlephoto"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/prenez_votre_photo_pour_prouver_au_monde_que_vous_vous_occupez_du_bien_de_notre_plan_te"
+        app:layout_constraintBottom_toTopOf="@+id/lignetitre4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="358dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
