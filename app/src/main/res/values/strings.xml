@@ -20,14 +20,11 @@
     <string name="cetaitaliut">cetaitaliut</string>
     <string name="cetteimgetaitenoctobre">cetteimgetaitenoctobre</string>
     <string name="aide_l_application_permet_de_calculer_le_meilleur_emplacement_pour_vos_panneaux_solaires_il_vous_suffit_de_choisir_un_panneau_d_entrer_les_coordonn_es_et_de_recevoir_les_statistiques">Aide : l\'application permet de calculer le meilleur emplacement pour vos panneaux solaires. il vous suffit de choisir un panneau, d\'entrer les coordonnées et de recevoir les statistiques.</string>
-    <string name="prenez_votre_photo_pour_prouver_au_monde_que_vous_vous_occupez_du_bien_de_notre_plan_te">Prenez votre photo pour prouver au monde que vous vous occupez du bien de notre planète !</string>
-    <string name="photo_clic">PHOTO CLIC</string>
-    <string name="photodevous">photodevous</string>
     <string name="recherche">RECHERCHE</string>
     <string name="jesuislenom">JeSuisLeNom</string>
     <string name="nom">Nom</string>
-    <string name="coordonnee_x">Coordonnee X</string>
-    <string name="coordonn_e_y">Coordonnée Y</string>
+    <string name="coordonnee_x" translatable="false">Latitude</string>
+    <string name="coordonn_e_y" translatable="false">Longitude</string>
     <string name="envoie_donnees">Envoie donnees</string>
     <string name="description">Description</string>
     <string name="jesuisletype">JeSuisLeType</string>
@@ -35,4 +32,10 @@
     <string name="type">Type</string>
     <string name="retour">RETOUR</string>
     <string name="photo_representant_un_panneau">Photo representant un panneau</string>
+    <string name="aideText">Si vous avez besoin d\'aide veuilez contacter :</string>
+    <string name="aideEmail" translatable="false">E-mail : Aide@SolarSoluce.fr</string>
+    <string name="aidePhone">Téléphone : 01 23 45 67 89</string>
+    <string name="rechercheCoord">Cliquez pour entrer vos coordonnées</string>
+    <string name="coordTitre">Veuillez saisir les coordonnées du lieu ou vous souhaitez installer un panneau solaire</string>
+    <string name="coordValide">Valider</string>
 </resources>

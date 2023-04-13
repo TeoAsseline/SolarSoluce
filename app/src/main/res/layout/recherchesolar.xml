@@ -63,44 +63,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="93dp"
         android:text="@string/nom"
         android:textAlignment="textStart"
         android:textColor="#3F51B5"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordonneeY" />
-
-    <EditText
-        android:id="@+id/coordonneeX"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="45dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/coordonnee_x"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lignetitre5"
-        tools:ignore="LabelFor" />
-
-    <EditText
-        android:id="@+id/coordonneeY"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/coordonn_e_y"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordonneeX"
-        tools:ignore="LabelFor" />
+        app:layout_constraintTop_toBottomOf="@+id/rechercheCoord" />
 
     <ImageButton
         android:id="@+id/envoyercoor"
@@ -118,14 +88,14 @@
         android:id="@+id/typedupanneau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="93dp"
         android:layout_marginEnd="140dp"
         android:text="@string/type"
         android:textColor="#3F51B5"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordonneeY" />
+        app:layout_constraintTop_toBottomOf="@+id/rechercheCoord" />
 
     <TextView
         android:id="@+id/affichetypepanneau"
@@ -172,4 +142,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/panneauxsoleil"
         android:contentDescription="@string/photo_representant_un_panneau" />
+
+    <TextView
+        android:id="@+id/rechercheCoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="93dp"
+        android:text="@string/rechercheCoord"
+        app:layout_constraintBottom_toTopOf="@+id/titredupanneau"
+        app:layout_constraintEnd_toStartOf="@+id/envoyercoor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lignetitre5" />
+
+    <TextView
+        android:id="@+id/rechercheRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="94dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
