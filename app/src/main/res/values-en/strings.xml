@@ -6,8 +6,8 @@
     <string name="quitter">Leave</string>
     <string name="aide">Help</string>
     <string name="solar_soluce">SOLAR SOLUCE</string>
-    <string name="type_1">Type 1</string>
-    <string name="type_2">Type 2</string>
+    <string name="type_1">Photovoltaic</string>
+    <string name="type_2">Thermal</string>
     <string name="imageliste">Panel</string>
     <string name="panneau">SolarPanelName</string>
     <string name="information_solar">Information Solar</string>
@@ -28,12 +28,24 @@
     <string name="description">Description</string>
     <string name="jesuisletype">JeSuisLeType</string>
     <string name="jesuisladescription">JeSuisLaDescription</string>
+    <string name="jesuilerendement">JeSuiLeRendement</string>
     <string name="type">Type</string>
     <string name="retour">RETURN</string>
     <string name="photo_representant_un_panneau">Photo representing a solar panel</string>
     <string name="aideText">If you need help please contact :</string>
+    <string name="aideText2">Or you can find triggering information in you website :</string>
     <string name="aidePhone">Phone : 01 23 45 67 89</string>
     <string name="rechercheCoord">Click to enter your contact information</string>
     <string name="coordTitre">Please enter the location where you would like to install a solar panel</string>
     <string name="coordValide">Confirm</string>
+    <string name="statistique">STATISTICS</string>
+    <string name="jesuislaproduction">Imtheproduction</string>
+    <string name="jesuislaproductionmax">ImtheMaxproduction</string>
+    <string name="jesuislaproductionmoy">ImtheAVGproduction</string>
+    <string name="production_moyenne_du_panneau">Average panel production</string>
+    <string name="production_vos_coordonn_es">Production with your details</string>
+    <string name="les_informations_de_production_pour_ce_panneau_sont">The production information for this panel is :</string>
+    <string name="production_maximale_du_panneau">Maximum panel output</string>
+    <string name="textview">YourCoordonate</string>
+    <string name="voici_vos_coordonn_es">Your Coordonate :</string>
 </resources>

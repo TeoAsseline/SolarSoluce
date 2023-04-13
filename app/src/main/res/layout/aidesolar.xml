@@ -5,13 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/aidewebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="121dp"
+        android:text="@string/aidewebsite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AideText2"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/AideText2"
+        android:layout_width="297dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="57dp"
+        android:text="@string/aideText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aidePhone"
+        tools:ignore="TextSizeCheck" />
+
     <ImageView
         android:id="@+id/lignetitre4"
         android:layout_width="0dp"
         android:layout_height="15dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:background="#3F51B5"
         android:contentDescription="@string/lignetitre"
         android:visibility="visible"
@@ -28,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="15dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:background="#3F51B5"
         android:contentDescription="@string/lignetitre"
@@ -46,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="59dp"
         android:text="@string/aideText"
@@ -59,29 +85,40 @@
     <TextView
         android:id="@+id/aideEmail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="19dp"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="117dp"
-        android:layout_marginBottom="18dp"
         android:text="@string/aideEmail"
-        app:layout_constraintBottom_toTopOf="@+id/aidePhone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aideText" />
+        app:layout_constraintTop_toBottomOf="@+id/aideText"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/aidePhone"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="19dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="121dp"
-        android:layout_marginBottom="359dp"
         android:text="@string/aidePhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aideEmail"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="166dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/contact"
         app:layout_constraintBottom_toTopOf="@+id/lignetitre4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aideEmail" />
+        app:srcCompat="@mipmap/contact" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
