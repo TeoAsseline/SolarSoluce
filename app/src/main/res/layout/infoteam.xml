@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:text="@string/infosujet"
         android:textAlignment="center"
@@ -34,19 +34,6 @@
         app:layout_constraintTop_toBottomOf="@+id/infosujet"
         app:srcCompat="@mipmap/ligne_foreground"
         tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/recyclelogo"
-        android:layout_width="221dp"
-        android:layout_height="139dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="36dp"
-        android:background="#FFFFFF"
-        android:contentDescription="@string/recyclepanneau"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lignetitre"
-        tools:srcCompat="@mipmap/panneauxrecycle_round" />
 
     <TextView
         android:id="@+id/equipe"
@@ -116,4 +103,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@mipmap/teo" />
+
+    <ImageView
+        android:id="@+id/panneauxrecycle"
+        android:layout_width="170dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/recyclepanneau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lignetitre"
+        app:srcCompat="@mipmap/panneauxsoleil"
+        tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

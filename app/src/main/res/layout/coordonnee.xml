@@ -5,20 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/lignetitre2"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/lignetitre"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ligne_foreground"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/lignetitre7"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#3F51B5"
+        android:contentDescription="@string/lignetitre"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/ligne_foreground"
+        tools:visibility="visible" />
+
     <EditText
         android:id="@+id/coordonneeY2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="101dp"
-        android:layout_marginBottom="317dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/coordonn_e_y"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/coordonn_e_y"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coordonneeX2"
@@ -29,17 +63,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="287dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="101dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/coordonnee_x"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/coordonnee_x"
-        app:layout_constraintBottom_toTopOf="@+id/coordonneeY2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordTitre"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -47,26 +80,23 @@
         android:layout_width="282dp"
         android:layout_height="42dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="170dp"
         android:text="@string/coordTitre"
-        app:layout_constraintBottom_toTopOf="@+id/coordonneeX2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lignetitre2"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/coordValide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="153dp"
-        android:layout_marginTop="94dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="175dp"
         android:text="@string/coordValide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coordonneeY2" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
