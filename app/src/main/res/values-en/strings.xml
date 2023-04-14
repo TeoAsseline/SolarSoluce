@@ -46,6 +46,7 @@
     <string name="production_vos_coordonn_es">Production with your details</string>
     <string name="les_informations_de_production_pour_ce_panneau_sont">The production information for this panel is :</string>
     <string name="production_maximale_du_panneau">Maximum panel output</string>
-    <string name="textview">YourCoordonate</string>
+    <string name="textview">please click on the arrow</string>
     <string name="voici_vos_coordonn_es">Your Coordonate :</string>
+    <string name="ButtonStat">see the statistics</string>
 </resources>

@@ -156,13 +156,12 @@
 
     <ImageView
         android:id="@+id/panneauinfo"
-        android:layout_width="85dp"
-        android:layout_height="83dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="4dp"
         android:contentDescription="@string/photo_representant_un_panneau"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/panneauxsoleil" />
 
     <TextView
@@ -204,4 +203,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rechercheCoord" />
+
+    <Button
+        android:id="@+id/buttonStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/ButtonStat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

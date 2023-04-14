@@ -64,8 +64,17 @@ public class SQL extends SQLiteOpenHelper {
 
     public Panneau getOnePanneau(int id){
         SQLiteDatabase db=this.getReadableDatabase();
-        Cursor c= db.query("panneau",new String[]{"_id","nom","description","type","rendement","prodmoy","prodmax"},"_id=?",
+        Cursor c= db.query("panneau",new String[]{"_id","nom","type","description","prodmoy","prodmax","rendement"},"_id=?",
                 new String[]{String.valueOf(id)},null,null,null);
+        c.moveToFirst();
+        Panneau p= new Panneau(c.getInt(0),c.getString(1),c.getString(2),c.getString(3),c.getDouble(4),c.getDouble(5),c.getDouble(6));
+        c.close();
+        return p;
+    }
+    public Panneau getOnePanneauByName(String name){
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor c= db.query("panneau",new String[]{"_id","nom","type","description","prodmoy","prodmax","rendement"},"nom=?",
+                new String[]{String.valueOf(name)},null,null,null);
         c.moveToFirst();
         Panneau p= new Panneau(c.getInt(0),c.getString(1),c.getString(2),c.getString(3),c.getDouble(4),c.getDouble(5),c.getDouble(6));
         c.close();

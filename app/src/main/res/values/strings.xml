@@ -49,8 +49,9 @@
     <string name="les_informations_de_production_pour_ce_panneau_sont">Les informations de production pour ce panneau sont :</string>
     <string name="production_maximale_du_panneau">Production maximale du panneau</string>
     <string name="contact" translatable="false">contact</string>
-    <string name="textview">Voscoordonnées</string>
+    <string name="textview">Pas encore de coordonnées saisies</string>
     <string name="voici_vos_coordonn_es">Voici vos coordonnées :</string>
     <string name="rendement" translatable="false">Rendement</string>
     <string name="jesuilerendement">JeSuiLeRendement</string>
+    <string name="ButtonStat">Voir les statistique</string>
 </resources>

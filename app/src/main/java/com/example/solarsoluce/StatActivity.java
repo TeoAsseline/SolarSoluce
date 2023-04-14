@@ -6,15 +6,47 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
 public class StatActivity extends AppCompatActivity{
+
+    Panneau panneau = new Panneau();
+    SQL s = new SQL(StatActivity.this);
+    Random random = new Random();
+    double ensoleillement;
+    double productionDouble;
+    String production;
+    String productionMoyenne;
+    String productionMax;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.statsolar);
+        panneau= s.getOnePanneauByName(getIntent().getStringExtra("name"));
+        ensoleillement = 300+random.nextInt(300);
+        productionDouble = ensoleillement*panneau.getRendement();
+        if(productionDouble>panneau.getProdmax()){
+            panneau.setProdmax(productionDouble);
+            s.updatePanneau(panneau);
+        }
+
+        TextView prod = findViewById(R.id.afficheprodcoord);
+        TextView prodMoyenne = findViewById(R.id.afficheprodmoy);
+        TextView prodMax = findViewById(R.id.afficheprodmax);
+
+        production = ""+productionDouble;
+        productionMoyenne= ""+panneau.getProdmoy();
+        productionMax= ""+panneau.getProdmax();
+
+        prod.setText(production+" kWh");
+        prodMoyenne.setText(productionMoyenne+" kWh");
+        prodMax.setText(productionMax+" kWh");
         //ELEMENT DE LANCEMENT
         Button recherche = findViewById(R.id.retour);
         recherche.setOnClickListener(v -> {

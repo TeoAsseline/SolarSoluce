@@ -15,12 +15,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class RechercheActivity extends AppCompatActivity {
 
-
+    Panneau panneau = new Panneau();
+    SQL s = new SQL(RechercheActivity.this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recherchesolar);
+        TextView nom = findViewById(R.id.affichenompanneau);
+        TextView description = findViewById(R.id.affichedescription);
+        TextView type = findViewById(R.id.affichetypepanneau);
+        TextView rendement = findViewById(R.id.afficherendementpanneau);
         TextView rechercheRetour = findViewById(R.id.rechercheRetour);
+        Button stat = findViewById(R.id.buttonStat);
+
+        stat.setEnabled(false);
+        panneau= s.getOnePanneauByName(getIntent().getStringExtra("name"));
+
+        nom.setText(getIntent().getStringExtra("name"));
+        description.setText(panneau.getDescription());
+        type.setText(panneau.getType());
+        String s = "" + panneau.getRendement();
+        rendement.setText(s);
+
 
         ActivityResultLauncher<Intent> activityLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -30,6 +46,7 @@ public class RechercheActivity extends AppCompatActivity {
                         if (intent!= null) {
                             String message = intent.getStringExtra("MESSAGE");
                             rechercheRetour.setText(message);
+                            stat.setEnabled(true);
 
                         }
 
@@ -41,6 +58,12 @@ public class RechercheActivity extends AppCompatActivity {
         accueil.setOnClickListener(v -> {
             Intent accueilpage = new Intent(RechercheActivity.this, MainActivity.class);
             startActivity(accueilpage);
+        });
+
+        stat.setOnClickListener(v -> {
+            Intent statpage = new Intent(RechercheActivity.this, StatActivity.class);
+            statpage.putExtra("name",panneau.getNom());
+            startActivity(statpage);
         });
 
 
