@@ -74,8 +74,8 @@
 
     <TextView
         android:id="@+id/afficherendementpanneau"
-        android:layout_width="149dp"
-        android:layout_height="40dp"
+        android:layout_width="147dp"
+        android:layout_height="29dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:text="@string/jesuilerendement"
@@ -123,9 +123,9 @@
 
     <TextView
         android:id="@+id/affichetypepanneau"
-        android:layout_width="115dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="113dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="60dp"
         android:text="@string/jesuisletype"
         app:layout_constraintEnd_toEndOf="parent"
